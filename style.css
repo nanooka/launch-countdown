@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url(./images/bg-stars.svg),
+    linear-gradient(hsl(234, 17%, 12%), hsl(324, 14%, 14%));
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Red Hat Text";
+}
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 132px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 22px;
+  color: white;
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
+}
+p {
+  color: #fb5e84;
+  font-weight: 700;
+  font-size: 80px;
+}
+.container {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 104px;
+}
+.card-background {
+  width: 148px;
+  height: 150px;
+  border-radius: 8px;
+  background-color: #191a23;
+  overflow: hidden;
+}
+.cards-txt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+.txt {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 6px;
+  color: #8385a9;
+  text-transform: uppercase;
+}
+.time {
+  background-color: #343650;
+  width: 148px;
+  height: 140px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.half {
+  width: 148px;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.179);
+  position: absolute;
+  top: 0;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom: 1px groove rgba(0, 0, 0, 0.297);
+}
+.left-circle {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(25, 26, 35, 1);
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+.right-circle {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(25, 26, 35, 1);
+  border-radius: 50%;
+  position: absolute;
+  right: -6px;
+}
+.hidden {
+  display: none;
+}
+#timer {
+  color: #fb5e84;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
