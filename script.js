@@ -5,10 +5,9 @@ var x = setInterval(function () {
   // Get today's date and time
   var now = new Date().getTime();
 
-  // Find the distance between now and the count down date
+  // Find the distance between now and the countdown date
   var distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -19,10 +18,10 @@ var x = setInterval(function () {
   document.querySelector(".minutes").innerText = minutes;
   document.querySelector(".seconds").innerText = seconds;
 
-  // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
     document.querySelector(".container").classList.add("hidden");
+    document.querySelector(".soon").classList.add("hidden");
     document.getElementById("timer").innerHTML = "WE'RE LAUNCHING NOW";
   }
 }, 1000);
